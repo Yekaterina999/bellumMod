@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_javelineer">
+  <Identity>
+    <VisibleClasses datatype="tokens">Champion</VisibleClasses>
+    <GenericName>Champion Skirmisher</GenericName>
+    <SpecificName>Heavy Skirmisher</SpecificName>
+    <Icon>units/samnite_skirmisher.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/carthaginians/infantry_javelinist_c_samnite.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>6.7</Pierce>
+      </Damage>
+      <MaxRange>40</MaxRange>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>1</DefaultArrowCount>
+    <MaxArrowCount>7</MaxArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <GarrisonArrowClasses>Soldier</GarrisonArrowClasses>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Territory>neutral enemy</Territory>
+    <Category>ArmyCamp</Category>
+    <Distance>
+      <FromClass>ArmyCamp</FromClass>
+      <MinDistance>80</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints>
+    <RegenRate>10.0</RegenRate>
+    <GarrisonRegenRate>3.0</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>250</BuildTime>
+    <Resources>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>6</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_sb</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Army Camp</GenericName>
+    <SpecificName>Castra</SpecificName>
+    <Tooltip>Build in neutral or enemy territory. Train Advanced Melee Infantry. Garrison Soldiers for additional arrows.</Tooltip>
+    <Classes datatype="tokens">ConquestCritical CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">City ArmyCamp</VisibleClasses>
+    <Icon>structures/roman_camp.png</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <wood>100</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="36.0" depth="36.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.49</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_axeman_a
+      units/{civ}/infantry_swordsman_a
+      units/{civ}/infantry_spearman_a
+      units/{civ}/infantry_pikeman_a
+      units/{civ}/siege_ram
+      units/{civ}/siege_ballista_packed
+      units/{civ}/siege_onager
+      units/{civ}/siege_scorpio_packed
+    </Entities>
+    <Technologies datatype="tokens">
+      camp_reinforcement_rome
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>35</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay>
+    <DecayRate>37.5</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/romans/camp.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>29.5</Length>
+    <Indent>8</Indent>
+  </WallPiece>
+</Entity>

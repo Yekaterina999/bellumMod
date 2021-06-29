@@ -1,0 +1,18 @@
+{
+	"genericName": "marthon",
+	"description": "Increases the speed of champions by 20 percent",
+	"cost": {
+		"food": 800,
+		"metal": 300
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "marathon.png",
+	"researchTime": 40,
+	"tooltip": "Champions +10% walk speed.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20 }
+	],
+	"affects": ["Champions"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

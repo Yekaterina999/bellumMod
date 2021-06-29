@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_maharbal
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Maharbal</GenericName>
+    <SpecificName>Maharbaʿal</SpecificName>
+    <Icon>units/cart_hero_maharbal.png</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
+      <Entities datatype="tokens">
+          units/{civ}/champion_cavalry
+      </Entities>
+    <TechCostMultiplier>
+      <food>1</food>
+      <wood>1</wood>
+      <stone>1</stone>
+      <metal>1</metal>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_cavalry_spearman_maharbal_m.xml</Actor>
+  </VisualActor>
+</Entity>

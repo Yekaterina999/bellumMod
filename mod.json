@@ -1,0 +1,8 @@
+{
+	"name": "bellum",
+	"version": "2.0.0",
+	"label": "lionKanzen",
+	"description": "balancing ideas, suggested by lion.kanzen, valihrant and the rest of the forum",
+	"dependencies": ["0ad=0.0.25"]
+
+}

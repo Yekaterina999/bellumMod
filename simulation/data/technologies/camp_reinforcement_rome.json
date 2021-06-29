@@ -1,0 +1,24 @@
+{
+	"genericName": "Camp reinforcements",
+	"cost": {
+		"stone": 500,
+		"metal": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "rome" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "crenelations.png",
+	"researchTime": 60,
+	"tooltip": "Civic Structures +20% build time, +20% health, and +20% capture points.",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.2 },
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "MaxArrowCount", "add": 5}
+	],
+	"affects": ["ArmyCamp"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

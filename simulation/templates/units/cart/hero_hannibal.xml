@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_elephant_melee">
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_hannibal
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Hannibal Barca</GenericName>
+    <SpecificName>Ḥannibaʿal Baraq</SpecificName>
+    <Icon>units/cart_hero_hannibal.png</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/cart/champion_infantry
+    </Entities>
+    <TechCostMultiplier>
+      <food>1</food>
+      <wood>1</wood>
+      <stone>1</stone>
+      <metal>1</metal>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_elephantry_hannibal_m.xml</Actor>
+  </VisualActor>
+</Entity>

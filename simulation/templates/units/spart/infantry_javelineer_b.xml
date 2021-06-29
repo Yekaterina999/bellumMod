@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_javelineer">
+  <Attack>
+    <Ranged>
+      <AttackName>Javelin</AttackName>
+      <Damage>
+        <Hack>0</Hack>
+        <Pierce op="add">-4</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>30</MaxRange>
+      <MinRange>0</MinRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>30.0</Speed>
+        <Spread>1.6</Spread>
+        <Gravity>9.81</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/spart/syssiton
+      -structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>40</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SelectionGroupName>units/spart/infantry_javelineer_b</SelectionGroupName>
+    <GenericName>Helot Skirmisher</GenericName>
+    <SpecificName>Akontistḗs Heílōs</SpecificName>
+    <Icon>units/spart_infantry_javelinist.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/spart/infantry_javelineer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/spartans/infantry_javelinist_b.xml</Actor>
+  </VisualActor>
+</Entity>

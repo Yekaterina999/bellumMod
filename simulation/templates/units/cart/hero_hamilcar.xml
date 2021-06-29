@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Attack>
+    <Melee>
+      <AttackName context="Name of an attack using a single-edged sword.">Sword</AttackName>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_hamilcar_1
+    units/heroes/cart_hero_hamilcar_2
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Hamilcar Barca</GenericName>
+    <SpecificName>Ḥimelqart Baraq</SpecificName>
+    <Icon>units/cart_hero_hamilcar.png</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.5</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_swordsman_gaul_e
+      units/{civ}/infantry_swordsman_ital_e
+      units/{civ}/cavalry_spearman_ital_e
+      units/{civ}/cavalry_swordsman_iber_e
+    </Entities>
+    <TechCostMultiplier>
+    	<food>1</food>
+    	<wood>1</wood>
+    	<stone>1</stone>
+    	<metal>1</metal>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_cavalry_swordsman_hamilcar_m.xml</Actor>
+  </VisualActor>
+</Entity>
